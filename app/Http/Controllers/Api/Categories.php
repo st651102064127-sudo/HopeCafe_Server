@@ -45,10 +45,18 @@ class Categories extends Controller
     }
     public function index()
     {
-        $categories = Categories_Model::all();
-        return response()->json([
-            'data' => $categories,
-        ]);
+        try {
+            $categories = Categories_Model::all();
+            return response()->json([
+                'data' => $categories,
+            ]);
+        } catch (err) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'ข้อมูลไม่ถูกต้อง',
+
+            ], 422);
+        }
     }
 
     public function update(Request $req, $id)
