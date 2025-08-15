@@ -6,7 +6,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:5173'], // frontend ของคุณ
+    'allowed_origins' => ['192.168.1.0','https://hope-cafe-front-end.vercel.app/'], // frontend ของคุณ
 
     'allowed_origins_patterns' => [],
 
