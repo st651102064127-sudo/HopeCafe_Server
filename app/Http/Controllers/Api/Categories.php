@@ -54,7 +54,7 @@ public function index()
         return response()->json([
             'status' => 'error',
             'message' => 'ข้อมูลไม่ถูกต้อง',
-            // 'error' => $e->getMessage(), // แนะนำให้เพิ่มบรรทัดนี้เพื่อดูข้อผิดพลาดที่แท้จริง
+            'error' => $e->getMessage(), // แนะนำให้เพิ่มบรรทัดนี้เพื่อดูข้อผิดพลาดที่แท้จริง
         ], 422);
     }
 }
