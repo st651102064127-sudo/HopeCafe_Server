@@ -7,9 +7,8 @@ return [
     'allowed_methods' => ['*'],
 
 'allowed_origins' => [
-    'http://localhost:5174',
-    'https://hope-cafe-front-end.vercel.app/',
-    'https://hopecafe-server.onrender.com/',
+    // เพิ่ม URL ของ Vercel เข้าไปในนี้
+    'https://hope-cafe-front-end.vercel.app',
 ],
     'allowed_origins_patterns' => [],
 
