@@ -6,8 +6,11 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['192.168.1.0','https://hope-cafe-front-end.vercel.app/'], // frontend ของคุณ
-
+'allowed_origins' => [
+    'http://localhost:5174',
+    'https://hope-cafe-front-end.vercel.app/',
+    'https://hopecafe-server.onrender.com/',
+],
     'allowed_origins_patterns' => [],
 
     'allowed_headers' => ['*'],
